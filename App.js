@@ -15,7 +15,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
+//check app store
 const App = () => {
   return (
     <Fragment>
