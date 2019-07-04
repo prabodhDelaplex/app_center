@@ -16,6 +16,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+
 const App = () => {
   return (
     <Fragment>
