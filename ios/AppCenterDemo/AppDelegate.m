@@ -6,21 +6,28 @@
  */
 
 #import "AppDelegate.h"
-#import <AppCenterReactNativeCrashes/AppCenterReactNativeCrashes.h>
-#import <AppCenterReactNativeAnalytics/AppCenterReactNativeAnalytics.h>
-#import <AppCenterReactNative/AppCenterReactNative.h>
+#import <AppCenterCrashes/AppCenterCrashes.h>
+#import <AppCenterAnalytics/AppCenterAnalytics.h>
+#import <AppCenter/AppCenter.h>
 
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-  [AppCenterReactNativeCrashes registerWithAutomaticProcessing];  // Initialize AppCenter crashes
-  [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];  // Initialize AppCenter analytics
-  [AppCenterReactNative register];  // Initialize AppCenter
+  
+  [MSAppCenter start:@"aff1d7ca-8822-4f5e-9f44-c2a2ada62e0c" withServices:@[
+                                                                            [MSAnalytics class],
+                                                                            [MSCrashes class]
+                                                                            ]];
+  
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge
                                                    moduleName:@"AppCenterDemo"

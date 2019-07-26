@@ -41,13 +41,3 @@ target 'AppCenterDemo' do
 
   use_native_modules!
 end
-
-target 'AppCenterDemo-tvOS' do
-  # Pods for AppCenterDemo-tvOS
-
-  target 'AppCenterDemo-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
