@@ -1,25 +1,22 @@
 PODS:
-  - AppCenter (1.3.0):
-    - AppCenter/Analytics (= 1.3.0)
-    - AppCenter/Crashes (= 1.3.0)
-  - appcenter (2.1.0):
+  - appcenter (2.2.0):
     - AppCenterReactNativeShared
     - React
-  - appcenter-analytics (2.1.0):
+  - appcenter-analytics (2.2.0):
     - AppCenter/Analytics
     - AppCenterReactNativeShared
     - React
-  - appcenter-crashes (2.1.0):
+  - appcenter-crashes (2.2.0):
     - AppCenter/Crashes
     - AppCenterReactNativeShared
     - React
-  - AppCenter/Analytics (1.3.0):
+  - AppCenter/Analytics (2.2.0):
     - AppCenter/Core
-  - AppCenter/Core (1.3.0)
-  - AppCenter/Crashes (1.3.0):
+  - AppCenter/Core (2.2.0)
+  - AppCenter/Crashes (2.2.0):
     - AppCenter/Core
-  - AppCenterReactNativeShared (1.2.0):
-    - AppCenter/Core (= 1.3.0)
+  - AppCenterReactNativeShared (2.2.0):
+    - AppCenter/Core (= 2.2.0)
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
   - Folly (2018.10.22.00):
@@ -105,13 +102,9 @@ PODS:
   - yoga (0.60.0.React)
 
 DEPENDENCIES:
-  - appcenter (from `/Users/apple/Documents/TestAppCenter/app_center/node_modules/appcenter/ios`)
-  - AppCenter (~> 1.3.0)
-  - appcenter-analytics (from `/Users/apple/Documents/TestAppCenter/app_center/node_modules/appcenter-analytics/ios`)
-  - appcenter-crashes (from `/Users/apple/Documents/TestAppCenter/app_center/node_modules/appcenter-crashes/ios`)
-  - AppCenter/Analytics (~> 1.3.0)
-  - AppCenter/Crashes (~> 1.3.0)
-  - AppCenterReactNativeShared (~> 1.2.0)
+  - appcenter (from `../node_modules/appcenter`)
+  - appcenter-analytics (from `../node_modules/appcenter-analytics`)
+  - appcenter-crashes (from `../node_modules/appcenter-crashes`)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
@@ -143,11 +136,11 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   appcenter:
-    :path: "/Users/apple/Documents/TestAppCenter/app_center/node_modules/appcenter/ios"
+    :path: "../node_modules/appcenter"
   appcenter-analytics:
-    :path: "/Users/apple/Documents/TestAppCenter/app_center/node_modules/appcenter-analytics/ios"
+    :path: "../node_modules/appcenter-analytics"
   appcenter-crashes:
-    :path: "/Users/apple/Documents/TestAppCenter/app_center/node_modules/appcenter-crashes/ios"
+    :path: "../node_modules/appcenter-crashes"
   DoubleConversion:
     :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
@@ -194,11 +187,11 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  AppCenter: 77679d75cbb6e5327cb849d2988b57d9cb864dcb
-  appcenter: 2fd7b9987c7d0d4c52f4a13d26c4b4608748722a
-  appcenter-analytics: 6ba67c9b301b1717b7c8964c1bc33c1a704cf8d3
-  appcenter-crashes: 96953432c866620a06ced2bfbb43c6ab295b3aa0
-  AppCenterReactNativeShared: 82e4cf33cbc22b6eb7b2a981caa8e883b26bc5d4
+  AppCenter: c809e69d93218b9861b4f8e54ded8dcf4d2131e7
+  appcenter: d063bb98744a8352099746b3adcdcac96b246505
+  appcenter-analytics: 9b88d0afe15b9908431820b8046911c297409e2b
+  appcenter-crashes: 96c386fe361e2ec13267b563a205b5f051158121
+  AppCenterReactNativeShared: 5751a607a8aa06ebf19b48bf9d92bf3a75dab04e
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
@@ -223,6 +216,6 @@ SPEC CHECKSUMS:
   React-RCTWebSocket: fca087d583724aa0e5fef7d911f0f2a28d0f2736
   yoga: 616fde658be980aa60a2158835170f3f9c2d04b4
 
-PODFILE CHECKSUM: 0b1cbc2d894a249c0b20abdc070d525f3a397164
+PODFILE CHECKSUM: 50f462809ee1fe984f39db7ff9f546464a61675c
 
 COCOAPODS: 1.6.2

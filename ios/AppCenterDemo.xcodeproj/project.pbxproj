@@ -12,6 +12,9 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		18966D0522EAE9710002A78C /* libappcenter-analytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18966D0422EAE9710002A78C /* libappcenter-analytics.a */; };
+		18966D0722EAE9710002A78C /* libappcenter-crashes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18966D0622EAE9710002A78C /* libappcenter-crashes.a */; };
+		18966D0922EAE9710002A78C /* libappcenter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18966D0822EAE9710002A78C /* libappcenter.a */; };
 		232620DAA1E2BE49A56D50E5 /* libPods-AppCenterDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832483C5826E1AAA48CAAF07 /* libPods-AppCenterDemoTests.a */; };
 		83E6079C054472B8CC340D0B /* libPods-AppCenterDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8654B1A9454A224511DAA49B /* libPods-AppCenterDemo.a */; };
 		A6B736D7249441FBB317CA43 /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = C3D43E2729084E60B5F51C61 /* AppCenter-Config.plist */; };
@@ -40,6 +43,9 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AppCenterDemo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AppCenterDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AppCenterDemo/main.m; sourceTree = "<group>"; };
+		18966D0422EAE9710002A78C /* libappcenter-analytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libappcenter-analytics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18966D0622EAE9710002A78C /* libappcenter-crashes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libappcenter-crashes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18966D0822EAE9710002A78C /* libappcenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libappcenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4520087D0D5DC87A9820B739 /* Pods-AppCenterDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-AppCenterDemoTests/Pods-AppCenterDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5325211414359FD2A0BA12D4 /* Pods-AppCenterDemo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-AppCenterDemo-tvOS/Pods-AppCenterDemo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5870903C960469309649B4EC /* Pods-AppCenterDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppCenterDemoTests.release.xcconfig"; path = "Target Support Files/Pods-AppCenterDemoTests/Pods-AppCenterDemoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18966D0522EAE9710002A78C /* libappcenter-analytics.a in Frameworks */,
+				18966D0722EAE9710002A78C /* libappcenter-crashes.a in Frameworks */,
+				18966D0922EAE9710002A78C /* libappcenter.a in Frameworks */,
 				83E6079C054472B8CC340D0B /* libPods-AppCenterDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -125,6 +134,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18966D0422EAE9710002A78C /* libappcenter-analytics.a */,
+				18966D0622EAE9710002A78C /* libappcenter-crashes.a */,
+				18966D0822EAE9710002A78C /* libappcenter.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				8654B1A9454A224511DAA49B /* libPods-AppCenterDemo.a */,

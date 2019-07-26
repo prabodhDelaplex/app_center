@@ -28,10 +28,11 @@ target 'AppCenterDemo' do
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
-   pod 'AppCenter', '~> 1.3.0'
-   pod 'AppCenter/Crashes', '~> 1.3.0'
-   pod 'AppCenter/Analytics', '~> 1.3.0'
-   pod 'AppCenterReactNativeShared', '~> 1.2.0'
+  pod 'appcenter', :path => '../node_modules/appcenter'
+
+  pod 'appcenter-analytics', :path => '../node_modules/appcenter-analytics'
+
+  pod 'appcenter-crashes', :path => '../node_modules/appcenter-crashes'
 
   target 'AppCenterDemoTests' do
     inherit! :search_paths
@@ -39,14 +40,4 @@ target 'AppCenterDemo' do
   end
 
   use_native_modules!
-end
-
-target 'AppCenterDemo-tvOS' do
-  # Pods for AppCenterDemo-tvOS
-
-  target 'AppCenterDemo-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
