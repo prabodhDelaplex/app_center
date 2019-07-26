@@ -14,10 +14,18 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+@import AppCenter;
+@import AppCenterAnalytics;
+@import AppCenterCrashes;
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [MSAppCenter start:@"aff1d7ca-8822-4f5e-9f44-c2a2ada62e0c" withServices:@[
+                                                                            [MSAnalytics class],
+                                                                            [MSCrashes class]
+                                                                            ]];
   [AppCenterReactNativeCrashes registerWithAutomaticProcessing];  // Initialize AppCenter crashes
   [AppCenterReactNativeAnalytics registerWithInitiallyEnabled:true];  // Initialize AppCenter analytics
   [AppCenterReactNative register];  // Initialize AppCenter
